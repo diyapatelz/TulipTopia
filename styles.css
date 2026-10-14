@@ -1,0 +1,490 @@
+/*** You will not need this file until Unit 3 ***/
+
+/*** VSCodeEDU preview fix 
+
+  Purpose:
+  - Fix VSCodeEDU issue that causes a white border to show around
+    the preview window
+
+  When To Modify:
+  - If you change the background color of your webpage, you may need to update this rule too.
+***/
+html {
+    background-color: var(--bg-color );
+}
+
+/*** body ***
+  
+  Purpose:
+  - Add style rules for the body of your webpage
+  - This is useful if you want a rule to apply to EVERYTHING on your page
+    - (Tip: You can always override these rules later in the stylesheet)
+
+  When To Modify:
+  - [ ] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+body {
+    /* Add a background color or image */
+    background-color: var(--bg-color); /* see bottom of file for color variables */
+
+    /* Customize the default size, color, and font for text*/
+    font-size: 16px;
+    color: var(--text-color);
+    font-family: Tahoma, sans-serif; /* This tells the browser: "Try to use `Tahoma`, and if you can't find it, use any sans-serif font." */
+
+    /* Put space around the edges of the webpage */
+    margin: 15px;
+}
+
+/*** Text ***
+  
+  Purpose: 
+  - Add style rules for headings (h1-6),
+    paragraphs (p), links (a), and buttons
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+h1 {
+    background-color: rgb(255, 255, 189);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 44px;
+    text-align: left;
+    display: inline-block;
+    padding: 8px 14px 8px 14px;
+    border-radius: 29px;
+    color: #231942
+}
+
+h2 {
+   font-family: tahoma, sans-serif;
+   font-size: 24px;
+   color: #231942
+}
+
+h3 {
+    font-family: tahoma, sans-serif;
+    font-size: 24px;
+    color: #231942
+}
+
+h4 {
+  font-family: tahoma, sans-serif;
+  font-size: 19px;
+  color: #231942
+    
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #231942
+}
+
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #231942
+}
+
+a,
+a * {
+    
+}
+
+button {
+  background-color: rgb(130, 199, 118);
+    color: white;              
+    border: none;              
+    padding: 5px 12px;       
+    border-radius: 5px;        
+    cursor: pointer;         
+}
+
+button:hover {
+  background-color: var(--accent-color-dark);
+    /* Make the button look different when the user hovers over it */
+}
+
+/*** header ***
+  
+  Purpose:
+  - Add style rules for your website's header section
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;      
+    margin-bottom: 40px;    
+    text-align: left;      
+    border-radius: 12px;    
+}
+
+.header-item:nth-of-type(1) {
+    width: 100%;            
+    padding: 10px 20px;
+}
+
+#header-img {
+    float: left;
+    margin-left: 20px;      
+    margin-top: 5px;   
+    width: 40px;                  
+    height: auto;
+}
+
+.header-button {
+    background-color: rgb(130, 199, 118); 
+    color: white;                          
+    font-size: 15px;                      
+    text-align: center;                    
+    border: none;                        
+    padding: 10px 20px;                    
+    margin: 10px 5px 0px 0px;             
+    cursor: pointer;                     
+    border-radius: 6px;
+}
+
+.header-button:hover {
+    background-color: var(--accent-color-medium);
+}
+
+/*** footer ***
+  
+  Purpose:
+  - Add style rules for your website's footer section
+
+  When To Modify:
+  - [X] Project 3 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.footer { 
+    position: relative;       
+    left: 50%;
+    right: 50%;
+    width: 100vw;
+    background-color: var(--accent-color-darkest);
+    text-align: center;
+    padding: 12px 0;
+    z-index: 2000;   
+    margin-left: -50vw;     
+    margin-right: -50vw; 
+    margin-bottom: -50%;
+}
+
+.footer p {
+    margin: 0;
+    color: white;
+    font-style: normal;   
+}
+
+.footer a {
+    color: var(--accent-color-light);
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    color: var(--accent-color-green);
+}
+
+/*** Navigation bar (navbar) ***
+  
+  Purpose:
+  - Add style rules for your website's navbar
+
+  When To Modify:
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.navbar ul {
+    z-index: 1000;
+    list-style-type: none;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: var(--bg-color);
+}
+
+.navbar ul li {
+    float: left;
+    margin: 10px;
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: #231942;
+}
+
+.navbar ul li a:hover {
+    background-color: var(--accent-color-light);
+}
+
+
+/*** About Section ***
+  
+  Purpose:
+  - Add style rules for your website's About section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** Schedule Section ***
+  
+  Purpose:
+  - Add style rules for your website's Schedule section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** Links Section ***
+  
+  Purpose:
+  - Add style rules for your website's Links section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
+.rsvp-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.form-container {
+  padding-bottom: 100px;
+}
+
+.rsvp-para {
+  width: 55%;
+  padding-right: 9px;
+}
+
+.rsvp-participants {
+  width: 45%;
+  padding-right: 9px;
+}
+
+#rsvp-form input {
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid var(--accent-color-green);
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--error-color-border);
+  background-color: var(--error-color); 
+}
+
+/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
+.revealable {
+  --reveal-distance: 100px;
+
+  scroll-margin-top: var(--reveal-distance);
+  opacity: 0;
+  transition: all 1.3s ease-out, transform 1.2s ease-out;
+  position: relative;
+  transform: translateY(var(--reveal-distance));
+}
+
+.active {
+  scroll-margin-top: 0px;
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.reduce-motion .revealable {
+  transition: none !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+/*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
+/*** Success Modal ***/
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 999;   
+  
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.6);
+
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+  padding: 40px;
+  width: 50%;
+  max-width: 500px;
+  background-color: var(--accent-color-light, #f0f4f8);
+  color: #333;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: inherit;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#modal-text {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+#close-modal-btn {
+  background-color: var(--accent-color-dark, #2e7d32);
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+#close-modal-btn:hover {
+  opacity: 0.9;
+}
+
+/*** Dark Mode [PLACEHOLDER] [ADDED IN UNIT 5] ***/
+
+html:has(body.dark-mode),
+.dark-mode {
+  --bg-color: var(--bg-color-dark-mode);
+  --text-color: var(--text-color-dark-mode);
+  background-color: var(--bg-color);
+}
+
+.dark-mode h1 {
+  background-color: var(--accent-color-green);
+  color: var(--text-color-dark-mode);
+  border: 1px solid var(--accent-color-medium);
+}
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode p,
+.dark-mode li,
+.dark-mode .navbar ul li a {
+  color: var(--text-color-dark-mode); 
+}
+
+.dark-mode .navbar ul {
+  background-color: var(--bg-color-dark-mode);
+}
+
+#theme-button {
+    background: linear-gradient(135deg, var(--accent-color-medium), var(--accent-color-dark));
+    
+    font-weight: 300;
+  
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+#theme-button:hover {
+    background: var(--accent-color-darkest);
+    color: var(--accent-color-light);
+}
+
+#reduce-motion-btn {
+    background: linear-gradient(135deg, var(--accent-color-medium), var(--accent-color-dark));
+    font-weight: 300;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+#reduce-motion-btn:hover {
+    background: var(--accent-color-darkest);
+    color: var(--accent-color-light);
+}
+
+/*** Custom Colors (OPTIONAL) ***
+  
+  Purpose:
+  - Use CSS variables to define custom colors for your website
+  - To get you started, we've provided the color scheme used in our example site.
+  - To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+  When To Modify:
+  - [ ] Any time (OPTIONAL)
+***/
+
+:root {
+    /* Light Mode */
+    --bg-color: #FDFBF7;
+    --text-color: #2C3327;
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #3e3377;
+    --text-color-dark-mode: #fff;
+
+    /* Accent Colors */
+    --accent-color-light: #EAEFD0;
+    --accent-color-medium: #E8A598;
+    --accent-color-dark: #C98A7F;
+    --accent-color-darkest: #2C3327; 
+    --accent-color-green: #A3B19B;   
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}

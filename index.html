@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <!-- head -->
+        <title>Tuliptopia</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="./img/Tulip Logo.png">
+    </head>
+    
+    <body>
+    
+        <!-- navbar -->
+        <div class="navbar">
+            <img id="header-img" src="./img/Tulip Logo.png" width="40" height="40"/>   
+
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+
+                <li><button id="theme-button">Toggle Dark Mode</button></li>
+                <li><button id="reduce-motion-btn">Reduce Motion</button></li>
+            </ul>
+        </div> 
+
+        <!-- headings -->
+        <div class="header-container"> 
+            <div id="header-item">
+                <h1>Tuliptopia🌷</h1>
+                <h2>Where spring blooms beyond imagination🌸</h2>
+                <button type="button" class="header-button">Buy Tickets</button>
+                <button type="button" class="header-button">Directions and Hours</button>
+            </div>
+        </div>
+        
+        <!-- about --> 
+        <div class="revealable">
+            <h2 id="about">About the Event</h2>
+            <p>Welcome to Tuliptopia🌷, a paradise of petals, colors, and wonders open all spring for anyone looking to enjoy the outdoors. It's the perfect weekend escape to hang out with loved ones, take aesthetic photos, or wander and build your own custom bouquets.</p>
+            <p>Just grab a basket at the gate, and pick your favorite blooms. We can't wait to see you out in paradise.</p>
+            <h3>What to Expect</h3>
+            <h4>A magical spring experience for all ages! ✨</h4>
+            <ul>
+                <li> <b>20+ Tulip Varieties:</b> <i>Explore a breathtaking sea of rare fringes, classic pastels, and vibrant spring colors.</i></li>
+                <li> <b>Instagram-Ready Backdrops:</b> <i>Snap the perfect photo at our beautifully designed floral swings and rustic windmills.</i></li>
+                <li> <b>Live music concerts:</b> <i>Unwind and groove to local acoustic artists performing live in the picnic groves every weekend.</i></li>
+            </ul>
+        </div>
+
+        <!-- schedule --> 
+        <div class="revealable">
+            <h2 id="schedule">Event Schedule</h2>
+
+            <img alt="A rustic wicker basket with tulips in it." src="./img/Tulip Picking.jpg" width="200" height="300"/>
+            <h3>Baskets & Bouquets</h3>
+            <p>Grab your basket and wander around to hand-pick your very own custom bouquet to take home.</p>
+                
+            <img alt="Food trucks standing next to field of tulips" src="./img/Food Truck.png" width="300" height="200"/>
+            <h3>Grab & Graze</h3>
+            <p>Grab a bite from local artisanal food trucks parked right alongside the flower rows.</p>
+
+            <img alt="Picnic setup in field at sunset" src="./img/Picnic.jpg"/>
+            <h3>Golden Hour Picnic Groves</h3>
+            <p>Enjoy the picnic as the sun sets over the tulip field.</p> 
+        </div>
+
+        <!-- rsvp -->
+        <div id="rsvp" class="revealable">
+            <h2>RSVP</h2>
+            <p id="rsvp-count">⭐ 3 people have RSVP'd to this event!</p>
+
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                    <p>Welcome to Tuliptopia! Spaces in our picking rows fill up quickly during the peak spring blooming weeks. Let us know you are coming so we can reserve your custom wicker flower basket at the frontgate!!</p>
+                </div>
+                <div class="rsvp-participants">
+                    <p>🎟️ Jake from Florida has RSVP'd.</p>
+                    <p>🎟️ Santiago from Boston has RSVP'd.</p>
+                    <p>🎟️ Rosa from California has RSVP'd.</p>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <form id="rsvp-form" title="rsvp-form">
+                    <label for="rsvp-name">Name:</label>
+                    <input type="text" id="rsvp-name" placeholder="Your name"><br><br>
+
+                    <label for="rsvp-email">Email:</label>
+                    <input type="email" id="rsvp-email" placeholder="Your email"><br><br>
+                    
+                    <label for="rsvp-state">State:</label>
+                    <input type="text" id="rsvp-state" placeholder="e.g. New Jersey">    
+                </form>
+                <br>
+                <button id="rsvp-button">Submit RSVP</button>
+            </div>
+        </div>
+
+        <!-- links --> 
+            
+        <!-- footer -->
+        <div class="footer">
+            <p>© 2026 Tuliptopia Festival. All rights reserved. | 
+                <a href="mailto:info@tuliptopia.com">Email For Details</a> | 
+                <a href="https://www.google.com/search?q=tulip+festival+policies" target="_blank">Festival Policies</a>
+            </p>
+        </div>
+
+        <!-- success modal --> 
+        <div id="success-modal" class="modal">
+            <div class="modal-container">
+                <div id="modal-item">
+                    <p id="modal-text">Thank you for RSVPing!</p>
+                    <button id="close-modal-btn">Close</button>
+                </div>
+                <div id="modal-item">
+                    <img id="modal-img" src="./img/Tulip Logo.png" alt="Tulip Logo" width="120" height="120"/>
+                </div>
+            </div>
+        </div>
+
+        <!-- script -->
+        <script src="index.js"></script>
+    </body>  
+</html>
